@@ -610,4 +610,57 @@ footer ul li a:hover {
   .footer__socials {
     justify-content: center;
   }
+
+
+/* ====================== FOOTER ===================== */
+.carousel {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
+  background-color: white;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.englishGmailVideoOne {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__content {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel__item {
+  flex: 0 0 100%;
+  flex-basis: 100%;
+  display: none; /* Hide all videos initially */
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.carousel__button:hover {
+  background-color: #555;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
 }
