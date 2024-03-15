@@ -106,12 +106,18 @@ img {
 
 /* =================== NAVBAR ===================== */
 nav {
-  background: #6B63FF;
+  background: transparent;
   width: 100vw;
   height: 5rem;
   position: fixed;
   top: 0;
   z-index: 11;
+}
+
+/* change navbar styles on scroll using javascript */
+.window-scroll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .nav__container {
@@ -128,11 +134,11 @@ nav button {
 .nav__menu {
   display: flex;
   align-items: center;
-  gap: 6rem;
+  gap: 4rem;
 }
 
 .nav__menu a {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   transition: var(--transition);
 }
 
@@ -340,11 +346,13 @@ header {
 .testimonial__body::before {
   content: "";
   display: block;
-  background: linear-gradient(135deg,
-      transparent,
-      var(--color-primary),
-      var(--color-primary),
-      var(--color-primary));
+  background: linear-gradient(
+    135deg,
+    transparent,
+    var(--color-primary),
+    var(--color-primary),
+    var(--color-primary)
+  );
   width: 3rem;
   height: 3rem;
   position: absolute;
@@ -366,7 +374,7 @@ footer {
   gap: 5rem;
 }
 
-.footer__container>div h4 {
+.footer__container > div h4 {
   margin-bottom: 1.2rem;
 }
 
@@ -602,7 +610,6 @@ footer ul li a:hover {
   .footer__socials {
     justify-content: center;
   }
-<<<<<<< HEAD
 
 
 /* ====================== FOOTER ===================== */
@@ -656,6 +663,4 @@ footer ul li a:hover {
 .next {
   right: 10px;
 }
-=======
->>>>>>> a3b7de3de4594b7cc606114f01930816883b2859
 }
