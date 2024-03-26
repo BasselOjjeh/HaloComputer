@@ -612,77 +612,92 @@ footer ul li a:hover {
     top: 50%;
     transform: translateY(-50%);
     width: 30%;
-    background-color: #2C3E50; /* Dark blue color to match the website theme */
+    background-color: #6c63ff;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    border-left: 5px solid #8e44ad; /* A purple accent border */
+    border-left: 5px solid #8e44ad;
     padding: 1rem;
   }
-  
+
+
   .englishGmailVideoOne {
     position: relative;
     overflow: hidden;
-    padding-left: 30%; /* Give some space for the fixed carousel */
+    padding-left: 30%;
+    /* Give some space for the fixed carousel */
   }
-  
+
   .carousel__content {
     display: flex;
     transition: transform 0.5s ease;
   }
-  
+
   .carousel__item {
     flex: 0 0 100%;
     flex-basis: 100%;
-    display: block; /* Changed to block to show the first video or you can control which to show via JS */
+    display: block;
+    /* Changed to block to show the first video or you can control which to show via JS */
   }
-  
+
   .carousel__button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #34495e; /* Darker shade for the button */
+    background-color: #6c63ff;
+    /* Darker shade for the button */
     color: white;
     border: none;
     cursor: pointer;
     padding: 10px;
     z-index: 10;
   }
-  
+
   .carousel__button:hover {
-    background-color: #4e5d6c; /* Even darker shade on hover */
+    background-color: #6c63ff;
+    /* Even darker shade on hover */
   }
-  
+
   .main-container {
-    padding-top: 100px; /* Adjust this value based on the actual height of your navbar */
+    padding-top: 100px;
+    /* Adjust this value based on the actual height of your navbar */
     display: flex;
-    align-items: flex-start; /* Align sidebar and content at their tops */
+    align-items: flex-start;
+    /* Align sidebar and content at their tops */
   }
-  
+
   /* Additional styling to ensure no overlap with navbar */
   .course-sidebar {
-    padding-top: 1rem; /* Add padding to top of sidebar to push down content */
+    padding-top: 1rem;
+    /* Add padding to top of sidebar to push down content */
   }
-  
+
   /* Assuming you have a sidebar navigation similar to the one in the image provided */
   .course-list {
-    background-color: #34495e; /* To match the color theme */
-    border-radius: 4px; /* Rounded corners for the list */
+    background-color: #6c63ff;
+    /* To match the color theme */
+    border-radius: 4px;
+    /* Rounded corners for the list */
     padding: 1rem;
-    margin-top: 1rem; /* To give some space below the navbar */
+    margin-top: 1rem;
+    /* To give some space below the navbar */
   }
-  
+
   .course-list li {
-    background-color: #4e5d6c; /* Slightly lighter than the sidebar for contrast */
+    background-color: #6c63ff;
+    /* Slightly lighter than the sidebar for contrast */
     margin-bottom: 0.5rem;
     padding: 0.75rem;
-    color: white; /* Text color */
-    border-radius: 4px; /* Match rounded corners */
+    color: #6c63ff;
+    /* Text color */
+    border-radius: 4px;
+    /* Match rounded corners */
     transition: background-color 0.3s ease;
   }
-  
+
   .course-list li:hover,
   .course-list li.active {
-    background-color: #8e44ad; /* A purple color for hover/active state */
-    color: white;
+    background-color: #8e44ad;
+    /* A purple color for hover/active state */
+    color: #6c63ff;
   }
-}  
+}

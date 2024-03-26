@@ -21,46 +21,59 @@
         body {
             background-image: url("./images/bg-texture.png");
         }
+
         /* Main container styling */
         .main-container {
             display: flex;
             margin-top: 30px;
         }
+
         /* Sidebar styling */
         .course-sidebar {
             flex: 0 0 200px;
-            background-color: #f4f4f4;
+            background-color: #6c63ff;
             padding: 20px;
-            height: calc(150vh - 80px); /* Consider the height of the navbar */
+            height: calc(150vh - 80px);
+            /* Consider the height of the navbar */
             overflow-y: auto;
         }
+
         .course-list {
             list-style-type: none;
             padding: 0;
         }
+
         .course-list li {
             padding: 10px;
             margin: 10px 0;
-            background: #e7e7e7;
+            background: #6c63ff;
             cursor: pointer;
         }
+
         /* Content area styling */
         .course-content {
             flex: 1;
             padding: 50px;
         }
+
         .carousel__content iframe {
             width: 100%;
-            height: 700px; /* Adjust based on your preference */
+            height: 700px;
+            /* Adjust based on your preference */
+            background-color: #6c63ff;
             border: none;
         }
     </style>
 </head>
 
+<!--[1] OpenAI-->
+
 <body>
     <nav>
         <div class="container nav__container">
-            <a href="index.html"><h2>Halo Computer</h2></a>
+            <a href="index.html">
+                <h2>Halo Computer</h2>
+            </a>
             <ul class="nav__menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="courses.html">Back to courses</a></li>
@@ -74,7 +87,6 @@
         <!-- Sidebar for course navigation -->
         <aside class="course-sidebar">
             <ul class="course-list">
-                <li>Welcome to our Hour of Code!</li>
                 <li>Intro to Drawing</li>
                 <li>Challenge: H for Hopper</li>
                 <li>More Drawing!</li>
@@ -91,10 +103,11 @@
             <div class="carousel__content">
                 <div class="carousel__item">
                     <iframe src="https://www.youtube.com/embed/ZpbVPanEmok?si=y72wFU6enqk5iszs"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
+
                 <!-- Include more carousel items as needed -->
             </div>
         </main>
@@ -103,7 +116,9 @@
     <footer>
         <div class="container footer__container">
             <div class="footer__1">
-                <a href="index.html" class="footer__logo"><h1>Halo Computer</h1></a>
+                <a href="index.html" class="footer__logo">
+                    <h1>Halo Computer</h1>
+                </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsum nobis ratione.</p>
             </div>
             <!-- Other footer content -->
