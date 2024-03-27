@@ -687,7 +687,7 @@ footer ul li a:hover {
     /* Slightly lighter than the sidebar for contrast */
     margin-bottom: 0.5rem;
     padding: 0.75rem;
-    color: #6c63ff;
+    color: black;
     /* Text color */
     border-radius: 4px;
     /* Match rounded corners */
