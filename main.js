@@ -51,14 +51,11 @@ sidebarLinks.forEach((link, index) => {
 });
 
 function loadCourseContent(index) {
-    // Sample array of YouTube video URLs and articles as placeholders
     const content = [
-        { type: 'video', src: 'https://www.youtube.com/embed/ZpbVPanEmok' },
-        { type: 'video', src: 'https://www.youtube.com/embed/tLgyVfDlP5o' },
+        { type: 'video', src: 'https://www.youtube.com/embed/kw2eFtZXDho?si=iGXhliHuqrxpG565' },
+        { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
         { type: 'video', src: 'https://www.youtube.com/embed/kvi5lGwpbgE' },
-        // Add more content as needed
-        { type: 'article', src: 'your-article-url-here' }
-        // Articles can be loaded via AJAX or other methods
+        { type: 'article', src: 'https://www.wikihow.com/Use-Gmail' }
     ];
 
     // Clear current content
