@@ -52,9 +52,7 @@ sidebarLinks.forEach((link, index) => {
 
 function loadCourseContent(index) {
     const content = [
-        { type: 'video', src: 'https://www.youtube.com/embed/kw2eFtZXDho?si=iGXhliHuqrxpG565' },
         { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
-        { type: 'video', src: 'https://www.youtube.com/embed/kvi5lGwpbgE' },
         { type: 'article', src: 'https://www.wikihow.com/Use-Gmail' }
     ];
 
