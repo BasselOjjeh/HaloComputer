@@ -56,7 +56,6 @@ function loadCourseContent(index) {
         { type: 'article', src: 'https://www.wikihow.com/Use-Gmail' }
     ];
 
-    // Clear current content
     contentArea.innerHTML = '';
 
     // Load new content based on type
@@ -68,13 +67,10 @@ function loadCourseContent(index) {
         iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
         iframe.setAttribute('allowfullscreen', '');
         iframe.style.width = '100%';
-        iframe.style.height = '500px'; // or your desired height
+        iframe.style.height = '600px'; 
         contentArea.appendChild(iframe);
     } else if (content[index].type === 'article') {
-        // If it's an article, you could load the content via AJAX, for example
-        // Here's just a placeholder for the article content
         const article = document.createElement('article');
-        article.textContent = 'Article content goes here...';
         contentArea.appendChild(article);
     }
 }
