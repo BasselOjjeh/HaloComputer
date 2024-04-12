@@ -40,6 +40,25 @@ body {
   margin: 0 auto;
 }
 
+.login-container, .signup-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.login-form label, .signup-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.login-form input, .signup-form input,
+.login-form button, .signup-form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
 section {
   padding: 6rem 0;
 }
