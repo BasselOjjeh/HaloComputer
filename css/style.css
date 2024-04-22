@@ -586,6 +586,7 @@ footer ul li a:hover {
     margin-bottom: 1.3rem;
   }
 
+
   /* ====================== CATEGORIES ===================== */
   .categories__right {
     grid-template-columns: 1fr 1fr;
@@ -627,5 +628,5 @@ footer ul li a:hover {
     justify-content: center;
   }
 
-  
+
 }
