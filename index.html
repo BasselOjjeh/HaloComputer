@@ -299,7 +299,6 @@
 
 
     <script>
-        // slides for testimonials section
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
@@ -307,7 +306,6 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            // when window width is >= 600px
             breakpoints: {
                 600: {
                     slidesPerView: 2
@@ -316,19 +314,6 @@
         });
     </script>
 </body>
-
-<section class="login-container">
-    <form action="/path/to/server" method="POST" class="login-form">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit" class="btn">Login</button>
-        <p>Not registered? <a href="signup.html">Create an account</a></p>
-    </form>
-</section>
 
 
 </html>

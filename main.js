@@ -53,12 +53,16 @@ sidebarLinks.forEach((link, index) => {
 function loadCourseContent(index) {
     const content = [
         { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
+        { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
+        { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
+        { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
+        { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
+        { type: 'article', src: 'https://www.wikihow.com/Use-Gmail' },
         { type: 'article', src: 'https://www.wikihow.com/Use-Gmail' }
     ];
 
     contentArea.innerHTML = '';
 
-    // Load new content based on type
     if (content[index].type === 'video') {
         const iframe = document.createElement('iframe');
         iframe.setAttribute('src', content[index].src);
