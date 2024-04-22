@@ -55,8 +55,10 @@ function getPageType() {
         return 'gmail';
     } else if (document.title.includes('Docs')) {
         return 'docs';
-    } else {
-        return null; // Default or error handling
+    } else if (document.title.includes('Sheets')) {
+        return 'sheets';
+    } else if (document.title.includes('Drive')) {
+        return 'drive';
     }
 }
 
@@ -68,6 +70,14 @@ function loadCourseContent(index) {
             { type: 'video', src: 'https://www.youtube.com/embed/xVfOeDZ7N4k?si=P12MSX9_LFNuuQy2' }
         ],
         'docs': [
+            { type: 'video', src: 'https://www.youtube.com/embed/z9i_h-WMQ68?si=VT8QKnW1_6X7dS1X' },
+            { type: 'video', src: 'https://www.youtube.com/embed/z9i_h-WMQ68?si=VT8QKnW1_6X7dS1X' }
+        ],
+        'sheets':[
+            { type: 'video', src: 'https://www.youtube.com/embed/xv8RXzUMTng?si=KDp56WUXO5ft6JOY' },
+            { type: 'video', src: 'https://www.youtube.com/embed/xv8RXzUMTng?si=KDp56WUXO5ft6JOY' }
+        ],
+        'drive':[
             { type: 'video', src: 'https://www.youtube.com/embed/gdrxAoqfvbA?si=eb1Ek3ieh_5CuVR1' },
             { type: 'video', src: 'https://www.youtube.com/embed/yR7JcVryCZk?si=eb1Ek3ieh_5CuVR1' }
         ]
@@ -86,8 +96,7 @@ function loadCourseContent(index) {
         iframe.setAttribute('allowfullscreen', '');
         iframe.style.width = '100%';
         iframe.style.height = '600px';
-        contentArea.appendChild(iframe);
-        
+        contentArea.appendChild(iframe); 
     } else {
         // Add more conditions if other types like articles need to be handled
     }
