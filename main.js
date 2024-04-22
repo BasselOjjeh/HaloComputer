@@ -50,31 +50,45 @@ sidebarLinks.forEach((link, index) => {
     });
 });
 
+function getPageType() {
+    if (document.title.includes('Gmail')) {
+        return 'gmail';
+    } else if (document.title.includes('Docs')) {
+        return 'docs';
+    } else {
+        return null; // Default or error handling
+    }
+}
+
 function loadCourseContent(index) {
-    const content = [
-        { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
-        { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
-        { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
-        { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
-        { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
-        { type: 'article', src: 'https://www.wikihow.com/Use-Gmail' },
-        { type: 'article', src: 'https://www.wikihow.com/Use-Gmail' }
-    ];
+    const pageType = getPageType();
+    const contentArrays = {
+        'gmail': [
+            { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
+            { type: 'video', src: 'https://www.youtube.com/embed/xVfOeDZ7N4k?si=P12MSX9_LFNuuQy2' }
+        ],
+        'docs': [
+            { type: 'video', src: 'https://www.youtube.com/embed/gdrxAoqfvbA?si=eb1Ek3ieh_5CuVR1' },
+            { type: 'video', src: 'https://www.youtube.com/embed/yR7JcVryCZk?si=eb1Ek3ieh_5CuVR1' }
+        ]
+    };
+
+    const content = contentArrays[pageType][index];
 
     contentArea.innerHTML = '';
 
-    if (content[index].type === 'video') {
+    if (content.type === 'video') {
         const iframe = document.createElement('iframe');
-        iframe.setAttribute('src', content[index].src);
+        iframe.setAttribute('src', content.src);
         iframe.setAttribute('title', 'YouTube video player');
         iframe.setAttribute('frameborder', '0');
         iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
         iframe.setAttribute('allowfullscreen', '');
         iframe.style.width = '100%';
-        iframe.style.height = '600px'; 
+        iframe.style.height = '600px';
         contentArea.appendChild(iframe);
-    } else if (content[index].type === 'article') {
-        const article = document.createElement('article');
-        contentArea.appendChild(article);
+        
+    } else {
+        // Add more conditions if other types like articles need to be handled
     }
 }
