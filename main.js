@@ -68,7 +68,7 @@ function loadCourseContent(index) {
         'gmail': [
             { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
             { type: 'video', src: 'https://www.youtube.com/embed/xVfOeDZ7N4k?si=P12MSX9_LFNuuQy2' },
-            //{type: 'article', src: '}
+            {type: 'article', src: 'https://blog.logrocket.com/the-ultimate-guide-to-iframes/'}
         ],
         'docs': [
             { type: 'video', src: 'https://www.youtube.com/embed/z9i_h-WMQ68?si=VT8QKnW1_6X7dS1X' },
@@ -101,9 +101,9 @@ function loadCourseContent(index) {
     } else if (content.type === 'article') {
         const iframe = document.createElement('iframe');
         iframe.setAttribute('src', content.src);
-        iframe.setAttribute('title', 'Article Content');
-        iframe.setAttribute('frameborder', '0');
-        iframe.setAttribute('allow', 'encrypted-media');
+        //iframe.setAttribute('title', 'Article Content');
+        iframe.setAttribute('sandbox', '');
+        iframe.setAttribute('allow-same-origin', '');
         iframe.style.width = '100%';
         iframe.style.height = '600px'; 
         contentArea.appendChild(iframe);
