@@ -67,7 +67,8 @@ function loadCourseContent(index) {
     const contentArrays = {
         'gmail': [
             { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
-            { type: 'video', src: 'https://www.youtube.com/embed/xVfOeDZ7N4k?si=P12MSX9_LFNuuQy2' }
+            { type: 'video', src: 'https://www.youtube.com/embed/xVfOeDZ7N4k?si=P12MSX9_LFNuuQy2' },
+            //{type: 'article', src: '}
         ],
         'docs': [
             { type: 'video', src: 'https://www.youtube.com/embed/z9i_h-WMQ68?si=VT8QKnW1_6X7dS1X' },
