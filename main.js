@@ -14,6 +14,25 @@ menuBtn.addEventListener('click', () => {
     menuBtn.style.display = "none";
 });
 
+// Function to toggle the FAQ display
+function toggleFAQ(event) {
+    const faq = event.currentTarget;
+    const faqIcon = faq.querySelector('.faq__icon i');
+    faq.classList.toggle('open');
+    if (faq.classList.contains('open')) {
+        faqIcon.classList.remove('uil-plus');
+        faqIcon.classList.add('uil-minus');
+    } else {
+        faqIcon.classList.remove('uil-minus');
+        faqIcon.classList.add('uil-plus');
+    }
+}
+
+const faqElements = document.querySelectorAll('.faq');
+faqElements.forEach(faq => {
+    faq.addEventListener('click', toggleFAQ);
+});
+
 
 // close nav menu
 closeBtn.addEventListener('click', () => {
