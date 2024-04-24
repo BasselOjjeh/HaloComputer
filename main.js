@@ -101,8 +101,6 @@ function loadCourseContent(index) {
     } else if (content.type === 'article') {
         const iframe = document.createElement('iframe');
         iframe.setAttribute('src', content.src);
-        //iframe.setAttribute('title', 'Article Content');
-        iframe.setAttribute('sandbox', '');
         iframe.setAttribute('allow-same-origin', '');
         iframe.style.width = '100%';
         iframe.style.height = '600px'; 
