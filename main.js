@@ -79,7 +79,7 @@ function loadCourseContent(index) {
         ],
         'drive':[
             { type: 'video', src: 'https://www.youtube.com/embed/gdrxAoqfvbA?si=eb1Ek3ieh_5CuVR1' },
-            { type: 'video', src: 'https://www.youtube.com/embed/yR7JcVryCZk?si=eb1Ek3ieh_5CuVR1' }
+            { type: 'article', src: 'https://blog.hubspot.com/marketing/how-to-add-html-embed-codes-ht' }
         ]
     };
 
@@ -97,7 +97,14 @@ function loadCourseContent(index) {
         iframe.style.width = '100%';
         iframe.style.height = '600px';
         contentArea.appendChild(iframe); 
-    } else {
-        // Add more conditions if other types like articles need to be handled
+    } else if (content.type === 'article') {
+        const iframe = document.createElement('iframe');
+        iframe.setAttribute('src', content.src);
+        iframe.setAttribute('title', 'Article Content');
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allow', 'encrypted-media');
+        iframe.style.width = '100%';
+        iframe.style.height = '600px'; 
+        contentArea.appendChild(iframe);
     }
 }
