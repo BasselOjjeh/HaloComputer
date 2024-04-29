@@ -32,6 +32,8 @@ function moveSlide(n) {
     showSlides();
 }
 
+
+
 function showSlides() {
     slides.forEach(slide => slide.style.display = "none");
     slides[slideIndex].style.display = "block";
@@ -66,19 +68,19 @@ function loadCourseContent(index) {
     const pageType = getPageType();
     const contentArrays = {
         'gmail': [
+            { type: 'video', src: 'https://www.youtube.com/embed/kw2eFtZXDho?si=gQSXhdrLXTT8WB5I' },
             { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
-            { type: 'video', src: 'https://www.youtube.com/embed/xVfOeDZ7N4k?si=P12MSX9_LFNuuQy2' },
-            {type: 'article', src: 'https://blog.logrocket.com/the-ultimate-guide-to-iframes/'}
+            { type: 'article', src: 'https://blog.logrocket.com/the-ultimate-guide-to-iframes/' }
         ],
         'docs': [
             { type: 'video', src: 'https://www.youtube.com/embed/z9i_h-WMQ68?si=VT8QKnW1_6X7dS1X' },
             { type: 'video', src: 'https://www.youtube.com/embed/z9i_h-WMQ68?si=VT8QKnW1_6X7dS1X' }
         ],
-        'sheets':[
+        'sheets': [
             { type: 'video', src: 'https://www.youtube.com/embed/xv8RXzUMTng?si=KDp56WUXO5ft6JOY' },
             { type: 'video', src: 'https://www.youtube.com/embed/xv8RXzUMTng?si=KDp56WUXO5ft6JOY' }
         ],
-        'drive':[
+        'drive': [
             { type: 'video', src: 'https://www.youtube.com/embed/gdrxAoqfvbA?si=eb1Ek3ieh_5CuVR1' },
             { type: 'article', src: 'https://blog.hubspot.com/marketing/how-to-add-html-embed-codes-ht' }
         ]
@@ -97,13 +99,15 @@ function loadCourseContent(index) {
         iframe.setAttribute('allowfullscreen', '');
         iframe.style.width = '100%';
         iframe.style.height = '600px';
-        contentArea.appendChild(iframe); 
+        contentArea.appendChild(iframe);
     } else if (content.type === 'article') {
         const iframe = document.createElement('iframe');
         iframe.setAttribute('src', content.src);
         iframe.setAttribute('allow-same-origin', '');
         iframe.style.width = '100%';
-        iframe.style.height = '600px'; 
+        iframe.style.height = '600px';
         contentArea.appendChild(iframe);
     }
+
+
 }
