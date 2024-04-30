@@ -70,7 +70,7 @@ function loadCourseContent(index) {
         'gmail': [
             { type: 'video', src: 'https://www.youtube.com/embed/kw2eFtZXDho?si=gQSXhdrLXTT8WB5I' },
             { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
-            { type: 'article', src: 'https://blog.logrocket.com/the-ultimate-guide-to-iframes/' }
+            { type: 'article', src: 'https://www.wikihow.com/Send-an-Email-Using-Gmail' }
         ],
         'docs': [
             { type: 'video', src: 'https://www.youtube.com/embed/z9i_h-WMQ68?si=VT8QKnW1_6X7dS1X' },
@@ -82,7 +82,7 @@ function loadCourseContent(index) {
         ],
         'drive': [
             { type: 'video', src: 'https://www.youtube.com/embed/gdrxAoqfvbA?si=eb1Ek3ieh_5CuVR1' },
-            { type: 'article', src: 'https://blog.hubspot.com/marketing/how-to-add-html-embed-codes-ht' }
+            { type: 'article', src: 'https://www.wikihow.com/Send-an-Email-Using-Gmail' }
         ]
     };
 
@@ -104,6 +104,7 @@ function loadCourseContent(index) {
         const iframe = document.createElement('iframe');
         iframe.setAttribute('src', content.src);
         iframe.setAttribute('allow-same-origin', '');
+
         iframe.style.width = '100%';
         iframe.style.height = '600px';
         contentArea.appendChild(iframe);
