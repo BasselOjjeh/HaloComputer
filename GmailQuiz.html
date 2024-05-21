@@ -37,12 +37,8 @@
             margin-bottom: 30px;
         }
 
-
-
-        /* Move the answers to the right */
         input[type="radio"] {
             margin-left: 100px;
-            /* Adjust this value as needed */
         }
 
         input[type="radio"] {
@@ -50,6 +46,18 @@
         }
 
         button[type="submit"] {
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            /* Adjust this value to move the button to the right */
+        }
+
+        button[type="back"] {
             background-color: #6c63ff;
             color: white;
             border: none;
@@ -101,6 +109,7 @@
             <input type="radio" id="question1" name="question1" value="c"> c) Rome<br>
         </div>
         <button type="submit">Submit</button>
+        <a href="Gmailcourse.html" class="back-button">Back</a>
     </form>
     <div id="result"></div>
 
@@ -121,6 +130,7 @@
                 question1: document.querySelector('input[name="question1"]:checked').value,
                 question2: document.querySelector('input[name="question2"]:checked').value,
                 question3: document.querySelector('input[name="question3"]:checked').value
+                question4: document.querySelector('input[name="question4"]:checked').value
             };
 
             // Check answers
