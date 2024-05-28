@@ -88,18 +88,18 @@
             stories<br>
         </div>
         <div>
-            <label for="question2">2. What is the largest mammal?</label><br>
-            <input type="radio" id="question2" name="question2" value="a"> a) Elephant<br>
-            <input type="radio" id="question2" name="question2" value="b"> b) Blue Whale<br>
-            <input type="radio" id="question2" name="question2" value="c"> c) Giraffe<br>
-            <input type="radio" id="question1" name="question1" value="c"> c) Rome<br>
+            <label for="question2">2. What button is used to start an email?</label><br>
+            <input type="radio" id="question2" name="question2" value="a"> a) Starred<br>
+            <input type="radio" id="question2" name="question2" value="b"> b) Compose<br>
+            <input type="radio" id="question2" name="question2" value="c"> c) Snoozed<br>
+            <input type="radio" id="question1" name="question1" value="c"> c) Sent<br>
         </div>
         <div>
-            <label for="question3">3. What is the capital of Japan?</label><br>
-            <input type="radio" id="question3" name="question3" value="a"> a) Beijing<br>
-            <input type="radio" id="question3" name="question3" value="b"> b) Tokyo<br>
-            <input type="radio" id="question3" name="question3" value="c"> c) Seoul<br>
-            <input type="radio" id="question1" name="question1" value="c"> c) Rome<br>
+            <label for="question3">3. What button do you press to send an email?</label><br>
+            <input type="radio" id="question3" name="question3" value="a"> a) Send<br>
+            <input type="radio" id="question3" name="question3" value="b"> b) Drafts<br>
+            <input type="radio" id="question3" name="question3" value="c"> c) Bold<br>
+            <input type="radio" id="question1" name="question1" value="c"> c) Close<br>
         </div>
         <div>
             <label for="question4">4. What is the capital of Japan?</label><br>
@@ -120,7 +120,7 @@
             // Answers
             const answers = {
                 question1: 'b',
-                question2: 'c',
+                question2: 'b',
                 question3: 'a',
                 question4: 'd'
             };
@@ -133,7 +133,7 @@
                 question4: document.querySelector('input[name="question4"]:checked').value
             };
 
-            // Check answers
+            // Chat gpt help for this
             let score = 0;
             for (const key in answers) {
                 if (answers[key] === userAnswers[key]) {
