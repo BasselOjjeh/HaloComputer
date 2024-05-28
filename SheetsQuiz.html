@@ -19,6 +19,12 @@
             background-image: url("./images/bg-texture.png");
             font-family: 'Montserrat', sans-serif;
             color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
         }
 
         h1 {
@@ -57,21 +63,29 @@
             /* Adjust this value to move the button to the right */
         }
 
-        button[type="back"] {
+        .back-button {
             background-color: #6c63ff;
             color: white;
-            border: none;
+            text-decoration: none;
             padding: 10px 20px;
             cursor: pointer;
             border-radius: 10px;
             margin-top: 10px;
             margin-right: 10px;
+            display: inline-block;
             /* Adjust this value to move the button to the right */
         }
 
-
         #result {
             margin-top: 20px;
+            font-size: 2em;
+            color: #ffdd57;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #scoreContainer {
+            text-align: center;
         }
     </style>
 </head>
@@ -82,9 +96,9 @@
         <div>
             <label for="question1">1. What is sheet used for?</label><br>
             <input type="radio" id="question1" name="question1" value="a"> a) To create folders<br>
-            <input type="radio" id="question1" name="question1" value="b"> b) To send and recieve emails<br>
+            <input type="radio" id="question1" name="question1" value="b"> b) To send and receive emails<br>
             <input type="radio" id="question1" name="question1" value="c"> c) To play games<br>
-            <input type="radio" id="question1" name="question1" value="c"> c) To use as a platform for writing
+            <input type="radio" id="question1" name="question1" value="d"> d) To use as a platform for writing
             stories<br>
         </div>
         <div>
@@ -92,26 +106,29 @@
             <input type="radio" id="question2" name="question2" value="a"> a) Elephant<br>
             <input type="radio" id="question2" name="question2" value="b"> b) Blue Whale<br>
             <input type="radio" id="question2" name="question2" value="c"> c) Giraffe<br>
-            <input type="radio" id="question2" name="question2" value="c"> c) Rome<br>
+            <input type="radio" id="question2" name="question2" value="d"> d) Rome<br>
         </div>
         <div>
             <label for="question3">3. What is the capital of Japan?</label><br>
             <input type="radio" id="question3" name="question3" value="a"> a) Beijing<br>
             <input type="radio" id="question3" name="question3" value="b"> b) Tokyo<br>
             <input type="radio" id="question3" name="question3" value="c"> c) Seoul<br>
-            <input type="radio" id="question3" name="question3" value="c"> c) Rome<br>
+            <input type="radio" id="question3" name="question3" value="d"> d) Rome<br>
         </div>
         <div>
             <label for="question4">4. What is the capital of Japan?</label><br>
             <input type="radio" id="question4" name="question4" value="a"> a) Beijing<br>
             <input type="radio" id="question4" name="question4" value="b"> b) Tokyo<br>
             <input type="radio" id="question4" name="question4" value="c"> c) Seoul<br>
-            <input type="radio" id="question4" name="question4" value="c"> c) Rome<br>
+            <input type="radio" id="question4" name="question4" value="d"> d) Rome<br>
         </div>
         <button type="submit">Submit</button>
         <a href="Sheetscourse.html" class="back-button">Back</a>
     </form>
-    <div id="result"></div>
+    <div id="scoreContainer" style="display:none;">
+        <div id="result"></div>
+        <a href="Sheetscourse.html" class="back-button">Back</a>
+    </div>
 
     <script>
         document.getElementById('quizForm').addEventListener('submit', function (event) {
@@ -119,10 +136,10 @@
 
             // Answers
             const answers = {
-                question1: 'b',
-                question2: 'c',
-                question3: 'a',
-                question4: 'd'
+                question1: 'd',
+                question2: 'b',
+                question3: 'b',
+                question4: 'b'
             };
 
             // User's answers
@@ -145,6 +162,9 @@
             const resultDiv = document.getElementById('result');
             resultDiv.innerHTML = `Your score is ${score}/${Object.keys(answers).length}`;
 
+            // Hide the form and display the score container
+            document.querySelector('form').style.display = 'none';
+            document.getElementById('scoreContainer').style.display = 'block';
         });
     </script>
 </body>
