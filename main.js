@@ -75,11 +75,13 @@ function loadCourseContent(index) {
         ],
         'docs': [
             { type: 'video', src: 'https://www.youtube.com/embed/eRqUE6IHTEA?si=WAW_oZ8pf1FL6XOd' },
-            { type: 'video', src: 'https://www.youtube.com/embed/z9i_h-WMQ68?si=VT8QKnW1_6X7dS1X' }
+            { type: 'video', src: 'https://www.youtube.com/embed/z9i_h-WMQ68?si=VT8QKnW1_6X7dS1X' },
+            { type: 'video', src: 'https://www.youtube.com/embed/eHNHY70Hepk?si=9cZw6uFGlePpcnYA' }
         ],
         'sheets': [
             { type: 'video', src: 'https://www.youtube.com/embed/FIkZ1sPmKNw?si=ijPg1lo9dGjZrlWX' },
-            { type: 'video', src: 'https://www.youtube.com/embed/pnGxShBGAyc?si=xPMziV7mUitepAar' }
+            { type: 'video', src: 'https://www.youtube.com/embed/pnGxShBGAyc?si=xPMziV7mUitepAar' },
+            { type: 'video', src: 'https://www.youtube.com/embed/W_ffJShpgiQ?si=19CUkryXabwNTLdj' }
         ],
         'drive': [
             { type: 'video', src: 'https://www.youtube.com/embed/gdrxAoqfvbA?si=eb1Ek3ieh_5CuVR1' },
