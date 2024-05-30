@@ -78,8 +78,8 @@ function loadCourseContent(index) {
             { type: 'video', src: 'https://www.youtube.com/embed/z9i_h-WMQ68?si=VT8QKnW1_6X7dS1X' }
         ],
         'sheets': [
-            { type: 'video', src: 'https://www.youtube.com/embed/eRqUE6IHTEA?si=WAW_oZ8pf1FL6XOd' },
-            { type: 'video', src: 'https://www.youtube.com/embed/xv8RXzUMTng?si=KDp56WUXO5ft6JOY' }
+            { type: 'video', src: 'https://www.youtube.com/embed/FIkZ1sPmKNw?si=ijPg1lo9dGjZrlWX' },
+            { type: 'video', src: 'https://www.youtube.com/embed/pnGxShBGAyc?si=xPMziV7mUitepAar' }
         ],
         'drive': [
             { type: 'video', src: 'https://www.youtube.com/embed/gdrxAoqfvbA?si=eb1Ek3ieh_5CuVR1' },
