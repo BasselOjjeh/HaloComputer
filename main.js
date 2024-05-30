@@ -71,7 +71,7 @@ function loadCourseContent(index) {
             { type: 'video', src: 'https://www.youtube.com/embed/kw2eFtZXDho?si=gQSXhdrLXTT8WB5I' },
             { type: 'video', src: 'https://www.youtube.com/embed/9JiOOda0n3w?si=P12MSX9_LFNuuQy2' },
             { type: 'article', src: 'https://clean.email/how-to-use-gmail' },
-            
+
         ],
         'docs': [
             { type: 'video', src: 'https://www.youtube.com/embed/eRqUE6IHTEA?si=WAW_oZ8pf1FL6XOd' },
@@ -83,7 +83,7 @@ function loadCourseContent(index) {
         ],
         'drive': [
             { type: 'video', src: 'https://www.youtube.com/embed/gdrxAoqfvbA?si=eb1Ek3ieh_5CuVR1' },
-            { type: 'article', src: 'https://www.wikihow.com/Send-an-Email-Using-Gmail' }
+            { type: 'article', src: 'https://www.androidauthority.com/how-to-use-google-drive-860193/' }
         ]
     };
 
