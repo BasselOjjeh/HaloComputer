@@ -1,9 +1,8 @@
-// change navbar styles on scroll
+
 window.addEventListener('scroll', () => {
     document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0);
 });
 
-// show/hide nav menu
 const menu = document.querySelector(".nav__menu");
 const menuBtn = document.querySelector("#open-menu-btn");
 const closeBtn = document.querySelector("#close-menu-btn");
@@ -14,14 +13,12 @@ menuBtn.addEventListener('click', () => {
     menuBtn.style.display = "none";
 });
 
-// close nav menu
 closeBtn.addEventListener('click', () => {
     menu.style.display = "none";
     closeBtn.style.display = "none";
     menuBtn.style.display = "inline-block";
 });
 
-// Carousel JavaScript code, adjusted for educational content
 let slideIndex = 0;
 const slides = document.querySelectorAll(".carousel__item");
 
@@ -31,6 +28,23 @@ function moveSlide(n) {
     if (slideIndex < 0) slideIndex = slides.length - 1;
     showSlides();
 }
+
+const faqs = document.querySelectorAll('.faq');
+
+faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+        faq.classList.toggle('open');
+
+        // change icon
+        const icon = faq.querySelector('.faq__icon i');
+        if (icon.className === 'uil uil-plus') {
+            icon.className = "uil uil-minus";
+        } else {
+            icon.className = "uil uil-plus";
+
+        }
+    })
+})
 
 
 
@@ -112,6 +126,20 @@ function loadCourseContent(index) {
         iframe.style.height = '600px';
         contentArea.appendChild(iframe);
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const faqs = document.querySelectorAll('.faq');
+
+        faqs.forEach(faq => {
+            faq.addEventListener('click', () => {
+                const answer = faq.querySelector('.question__answer');
+                answer.classList.toggle('open');
+            });
+        });
+    });
+
+
+
 
 
 }
