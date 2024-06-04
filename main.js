@@ -57,6 +57,7 @@ function showSlides() {
 showSlides();
 
 // Event listeners for the sidebar navigation links
+
 const sidebarLinks = document.querySelectorAll('.course-list li');
 const contentArea = document.querySelector('.course-content');
 
@@ -106,7 +107,7 @@ function loadCourseContent(index) {
     const content = contentArrays[pageType][index];
 
     contentArea.innerHTML = '';
-
+    // [5] Open AI helped with how to adjust youtube screen
     if (content.type === 'video') {
         const iframe = document.createElement('iframe');
         iframe.setAttribute('src', content.src);
@@ -117,6 +118,8 @@ function loadCourseContent(index) {
         iframe.style.width = '100%';
         iframe.style.height = '600px';
         contentArea.appendChild(iframe);
+
+        // [5] Open AI helped with how to adjust youtube screen
     } else if (content.type === 'article') {
         const iframe = document.createElement('iframe');
         iframe.setAttribute('src', content.src);
